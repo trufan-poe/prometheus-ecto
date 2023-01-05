@@ -50,7 +50,9 @@ defmodule PrometheusEcto.Mixfile do
 
   defp deps do
     [
-      {:prometheus_ex, "~> 1.1 or ~> 2.0 or ~> 3.0"},
+      {:prometheus_ex,
+      git: "https://github.com/trufan-poe/prometheus.ex",
+      ref: "update-delage"},
       {:ecto, "~> 2.0 or ~> 3.0"},
       {:mariaex, ">= 0.0.0", only: :test},
       {:ex_doc, ">= 0.0.0", only: :dev},
